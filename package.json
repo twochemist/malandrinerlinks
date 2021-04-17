@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hankchizljaw/directory-site.git"
+    "url": "//github.com/twochemist/malandrinerlinks.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hankchizljaw/directory-site/issues"
+    "url": "https://github.com/twochemist/malandrinerlinks/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/directory-site#readme"
+  "homepage": "https://github.com/twochemist/malandrinerlinks#readme"
 }
