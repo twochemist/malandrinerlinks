@@ -1,0 +1,59 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <main class="flow">
+    <article class="flow">
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </article>
+    <h2>Categorías</h2>
+    {% for tag in categories.tags %}
+      {% set collection = collections[tag.slug] %}
+
+      {% if collection.length %}
+        <article class="reel">
+          <h3 class="reel__heading">
+            {{ tag.title }}  
+            <a href="/category/{{ tag.slug }}">Ver todos</a>
+          </h3>
+          <ul class="reel__list">
+            {% for item in collections[tag.slug] | shuffle | limit %}
+              <li class="reel__item">
+                {% set cardTitle = item.data.title %}
+                {% set cardSummary = item.data.summary %}
+                {% set cardLink = item.data.link %}
+                {% set cardPermalink = item.url %}
+                {% include "partials/card.njk" %}
+              </li>  
+            {% endfor %}
+          </ul>
+        </article>
+      {% endif %}
+    {% endfor %}
+    
+    <h2>Area de conocimiento</h2>
+    {% for age in categories.ages %}
+      {% set collection = collections[age.slug] %}
+
+      {% if collection.length %}
+        <article class="reel">
+          <h3 class="reel__heading">
+            {{ age.title }}  
+            <a href="/category/{{ age.slug }}">Ver todos</a>
+          </h3>
+          <ul class="reel__list">
+            {% for item in collections[age.slug] | shuffle | limit %}
+              <li class="reel__item">
+                {% set cardTitle = item.data.title %}
+                {% set cardSummary = item.data.summary %}
+                {% set cardLink = item.data.link %}
+                {% set cardPermalink = item.url %}
+                {% include "partials/card.njk" %}
+              </li>  
+            {% endfor %}
+          </ul>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </main>
+{% endblock %}
