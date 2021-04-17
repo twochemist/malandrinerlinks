@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Category Archive</title>
+    <link rel="alternate" type="application/rss+xml" title="Software Development Links" href="https://malandrinerlinks.netlify.app/feed.xml" />
+    <style>
+      *,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,ul[class],ol[class],figure,blockquote,dl,dd{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+      :root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
+  --fluid-min-size: 18;
+  --fluid-max-size: 20;
+  --fluid-min-ratio: 1.2;
+  --fluid-max-ratio: 1.25;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
+      ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))
+  );
+}
+
+@media screen and (min-width: 1140px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --fluid-max-negative: (1 / var(--fluid-max-ratio) / var(--fluid-max-ratio));
+  --fluid-min-negative: (1 / var(--fluid-min-ratio) / var(--fluid-min-ratio));
+
+  --fluid-min-scale-0: var(--fluid-min-ratio);
+  --fluid-max-scale-0: var(--fluid-max-ratio);
+  --fluid-min-size-0: (var(--fluid-min-size)) / 16;
+  --fluid-max-size-0: (var(--fluid-max-size)) / 16;
+  --step-0: calc(
+    (
+      (var(--fluid-min-size-0) * 1rem) +
+        (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)
+    )
+  );
+
+  --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
+  --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
+  --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
+  --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
+  --step-1: calc(
+    (
+      (var(--fluid-min-size-1) * 1rem) +
+        (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)
+    )
+  );
+
+  --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
+  --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
+  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
+  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
+  --step-2: calc(
+    (
+      (var(--fluid-min-size-2) * 1rem) +
+        (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)
+    )
+  );
+
+  --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
+  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
+  --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
+  --fluid-max-size-3: (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
+  --step-3: calc(
+    (
+      (var(--fluid-min-size-3) * 1rem) +
+        (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)
+    )
+  );
+
+  --fluid-min-scale-4: var(--fluid-min-scale-3) * var(--fluid-min-ratio);
+  --fluid-max-scale-4: var(--fluid-max-scale-3) * var(--fluid-max-ratio);
+  --fluid-min-size-4: (var(--fluid-min-size) * var(--fluid-min-scale-3)) / 16;
+  --fluid-max-size-4: (var(--fluid-max-size) * var(--fluid-max-scale-3)) / 16;
+  --step-4: calc(
+    (
+      (var(--fluid-min-size-4) * 1rem) +
+        (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)
+    )
+  );
+
+  --fluid-min-scale-5: var(--fluid-min-scale-4) * var(--fluid-min-ratio);
+  --fluid-max-scale-5: var(--fluid-max-scale-4) * var(--fluid-max-ratio);
+  --fluid-min-size-5: (var(--fluid-min-size) * var(--fluid-min-scale-4)) / 16;
+  --fluid-max-size-5: (var(--fluid-max-size) * var(--fluid-max-scale-4)) / 16;
+  --step-5: calc(
+    (
+      (var(--fluid-min-size-5) * 1rem) +
+        (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)
+    )
+  );
+}
+
+      :root {
+  --metric-flow-space: 1em;
+  --metric-gutter: 1.25rem;
+}
+
+body {
+  background-color: #003f62;
+  background-image: url("https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.jpg");
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  padding: 4rem 1.5rem;
+  font-size: 1.1rem;
+  font-size: var(--step-0);
+  line-height: 1.4;
+}
+
+main {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 60ch;
+}
+
+footer[role='contentinfo'] {
+  text-align: center;
+  padding: 0 0 4rem 0;
+}
+
+footer[role='contentinfo'] p {
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  max-width: 40rem;
+  margin: 4rem auto !important;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-3);
+  color: #ffbc42;
+}
+
+h3 {
+  font-size: var(--step-2);
+}
+
+a {
+  color: currentColor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 1px dotted #333333;
+  outline-offset: 0.5rem;
+}
+
+/**
+ * Flow utility and contexts
+ */
+.flow > * + * {
+  margin-top: 1em;
+  margin-top: var(--metric-flow-space);
+}
+
+h2 ~ h2 {
+  --metric-flow-space: var(--step-4);
+}
+
+.reel ~ .reel {
+  --metric-flow-space: var(--step-3);
+}
+
+/**
+ * Reel component 
+ */
+.reel__heading a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fbcbdc;
+}
+
+[lang*='en'] .reel__heading a {
+  text-transform: uppercase;
+}
+
+.reel__list {
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+  padding: 0;
+  padding-top: var(--step-1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.reel__item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0 var(--metric-gutter) var(--metric-gutter) 0;
+  width: 16rem;
+}
+
+.reel__item > * {
+  flex: auto;
+}
+
+[lang*='en'] .reel__heading {
+  text-transform: capitalize;
+}
+
+.reel__action {
+  text-align: center;
+}
+
+/**
+ * Card component 
+ */
+.card {
+  display: block;
+  height: 100%;
+  border: 1px solid #003f62;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  color: #b90f4c;
+}
+
+.card__heading {
+  font-size: var(--step-1);
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #990c3f;
+}
+
+/**
+ * Scrollbars 
+ */
+
+::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d81159 0%, #990c3f 100%);
+  border-radius: 0.25rem;
+}
+
+/**
+ * Auto grid component 
+ */
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+  grid-gap: var(--metric-gutter);
+  padding: 2rem 0 0 0;
+}
+
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#252525" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    
+
+  <main>
+    <div class="[ wrapper ] [ flow ]">
+      <article class="flow">
+        <h1>
+          <a href="/">Malandriner Links</a>
+        </h1>
+        <p>Una colección curada de enlaces para ayudarte en el desarrollo web con recursos de <a href="https://danielprimo.io">Web Reactiva</a> y <a href="https://laselectanewsletter.com/">La Selecta Newsletter</a></p>
+
+      </article>
+      <h2>Enlaces disponibles bajo “”</h2>
+      <p>Estás viendo enlaces desde la categoría “”. <a href="/">Volver a categorías</a>.</p>
+      <ul class="auto-grid">
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="http://screeenly.com/" rel="external">urlcat </a></h3>
+  <p>Capturas de pantalla online y gratis. Es un poco lento, pero funciona.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="http://screeenly.com/" rel="external">Screenly </a></h3>
+  <p>Capturas de pantalla online y gratis. Es un poco lento, pero funciona.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/erebe/personal-server" rel="external">Ibis </a></h3>
+  <p>Guía para crear un servidor personal con K8s, SOPS, GPG, DNS.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/themsaid/ibis" rel="external">Ibis </a></h3>
+  <p>Si te equivocas en la terminal escribe &quot;fuck&quot; y lo arreglas.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/themsaid/ibis" rel="external">Ibis </a></h3>
+  <p>Generador de Ebook a Markdown con PHP Laravel.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/bradtraversy/design-resources-for-developers" rel="external">Recursos de design para developers</a></h3>
+  <p>Recursos con componentes modernos UI en diferen formatos como PSD, Sketch, Figma, etc.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://ekoopmans.github.io/html2pdf.js/" rel="external">html2pdf.js</a></h3>
+  <p>Convierte HTML a PDF usando puro JS con renderizado del lado del cliente.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://roadmap.sh/" rel="external">Developer Roadmaps</a></h3>
+  <p>Guías paso a paso y caminos para aprender diferentes herramientas y tecnologías.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://awesome-web-animation.netlify.app/" rel="external">Libreria CSS minimalista</a></h3>
+  <p>Hojas de estilos minimalistas para elementos HTML, sin clases, sin frameworks, solo semántica facil.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://awesome-web-animation.netlify.app/" rel="external">Awesome Web Animations</a></h3>
+  <p>Cientos de recursos para animar la web con cabeza y no con los pies.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.genbeta.com/correo/trucos-para-gmail-como-crearte-muchas-direcciones-extra-para-tu-cuenta" rel="external">Code App</a></h3>
+  <p>Nunca más usarás cuentas falsas de correo para pruebas.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://apps.apple.com/es/app/code-app/id1512938504?l=ca" rel="external">Code App</a></h3>
+  <p>Programar y compilar en el iPad.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/fingerprintjs/fingerprintjs" rel="external">FingerprintsJS</a></h3>
+  <p>para identificar a los usuarios sin autenticación.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://enviosecreto.es/" rel="external">Envio secreto de password</a></h3>
+  <p>Si quieres pasar contraseñas que se autodestruyan de forma segura por internet, usa esto.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://ayushirawat.com/automate-notion-with-python" rel="external">Automatiza Notion con Python</a></h3>
+  <p>Revoluciona el uso de Notion con este tutorial.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.notion.so/MetaCast-92c8bd50e6b8402499155fc8bbafe5da" rel="external">Metacast</a></h3>
+  <p>El proyecto de Carlos nos sigue ayudando con sus resúmenes de podcasts (muchos de tecnología).</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://book.hacktricks.xyz/" rel="external">HackTricks</a></h3>
+  <p>Ebook gratuito sobre hacking del que me encantaría entenderlo todo.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://neocities.org/" rel="external">Neocities</a></h3>
+  <p>El sucesor natural de Geocities. Crea una Website gratis con cero anuncios</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=es" rel="external">OneTab</a></h3>
+  <p>La extensión que ahora consumo de memoria del navegador.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/gioxx/MarvellousSuspender" rel="external">Maravellous Suspender</a></h3>
+  <p>La extensión que permite suspender las tabs del navegador no visibles.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://shields.io/" rel="external">Shields</a></h3>
+  <p>Badges para proyectos Open Source (utilizados en el #ProgramaEnPantuflas)</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://docs.meli.sh/" rel="external">Meli</a></h3>
+  <p>Hosting propio para el ecosistema Jamstack (Netlify Self Hosted, por así decirlo).</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/Zettelkasten-Team/Zettelkasten" rel="external">Zettelkasten Java</a></h3>
+  <p>Interfaz en Java para este sistema de archivo de ideas.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://flutterplasma.dev/" rel="external">Flutter Plasma</a></h3>
+  <p>Flutter es un framework basado en Dart (bebe de JavaScript) y ronda los dominios de Google.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.getporter.dev/" rel="external">Porter</a></h3>
+  <p>Heroku en formato Open Source.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://terminaldelinux.com/terminal/" rel="external">Herramientas de una Newsletter</a></h3>
+  <p>Lo que necesitas para la creacion personalizada para newsletters semanales.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://terminaldelinux.com/terminal/" rel="external">Terminal de Linux</a></h3>
+  <p>Introducción en castellano para sacar más partido a la consola.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://gitlab.com/imanolvalero/external-svgs" rel="external">External SVGs</a></h3>
+  <p>Un malandriner ha creado un ejemplo muy interesante para importar y manipular SVG en nuestras webs.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://binary.ninja/" rel="external">Binary.Ninja</a></h3>
+  <p>Es un IDE para hacer ingeniería inversa. Decompila, desensambla binarios, analiza estructuras y relaciones en el código más profundo..</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://grapesjs.com/" rel="external">GrapeJS</a></h3>
+  <p>Es un editor de bloques visual de código abierto. Si estás buscando que cualquiera pueda editar una web o newsletter, aquí lo tienes.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.napkin.io/" rel="external">Napkin</a></h3>
+  <p>Es un backend sin infraestructura. Solo en una caja de texto puedes ejecutar Python sin preguntas. Una URL para acceder y listo.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.postman.com/" rel="external">Postman</a></h3>
+  <p>Testea una API con endpoints y respuestas. Simplifica los pasos para construir una API</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.netlify.com/" rel="external">Netlify</a></h3>
+  <p>Hosts this website and other personal frontend projects. Highly recommended</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.danielprimo.io" rel="external">Daniel Primo - Web Reactiva</a></h3>
+  <p>Desarrolla aplicaciones web como en Silicon Valley aunque programes desde el cuarto de la ropa sucia.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.lastpass.com/es/solutions/business-password-manager" rel="external">Lastpass</a></h3>
+  <p>La seguridad de contraseñas no se puede dejar para mañana.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.freecodecamp.org/" rel="external">freeCodeCamp</a></h3>
+  <p>Comunidad sin animo de lucro para ayudar a aprender a programar.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://trello.com" rel="external">Trello</a></h3>
+  <p>Makes it easier to put down ideas and plans for new and ongoing projects.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://code.visualstudio.com/" rel="external">VS Code</a></h3>
+  <p>Code editing.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://github.com/ohmyzsh/ohmyzsh" rel="external">Oh My Zsh</a></h3>
+  <p>Oh My Zsh will not make you a 10x developer...but you may feel like one.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://desktop.github.com/" rel="external">GitHub Desktop</a></h3>
+  <p>Focus on what matters instead of fighting with Git.</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.danielprimo.io/podcast" rel="external">Web Reactivaaaaaaa</a></h3>
+  <p>Web Reactiva es el podcast free de danielprimo.io. Historias que tienen que ver con la programación y el desarrollo web....Porque la tecnología es necesaria, pero, ¡las personas somos lo importante!</p>
+</article>
+
+          </li>  
+        
+          <li>
+            
+            
+            
+            
+            
+            
+<article class="card">
+  <h3 class="card__heading"><a href="https://www.antonioarjona.dev" rel="external">@Chemistdev</a></h3>
+  <p>Antonio</p>
+</article>
+
+          </li>  
+        
+      </ul>
+      <hr />
+      <a href="/">Volver a la lista</a>
+    </div>
+  </main>
+
+    <hr />
+    <footer role="contentinfo">
+      <div class="[ wrapper ] [ flow ]">
+        <p>
+          Un proyecto de <a href="//antonioarjona.dev">Antonio Arjona</a>, con mención especial a
+          <a href="https://www.danielprimo.io/">Web Reactiva</a> por proveer esta coleccion de links. Este sitio esta creado con <a href="//11ty.dev">Eleventy</a> y alojado en <a href="//netlify.com">Netlify</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

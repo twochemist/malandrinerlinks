@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Software Development Links</title>
+  <subtitle></subtitle>
+  <link href="https://malandrinerlinks.netlify.app/feed.xml" rel="self"/>
+  <link href="https://malandrinerlinks.netlify.app/"/>
+  <id>https://malandrinerlinks.netlify.app</id>
+  <author>
+    <name>Antonio Arjona</name>
+    <email>manuel.lido@gmail.com</email>
+  </author>
+  
+    <entry>
+      <title>urlcat </title>
+      <link href="http://screeenly.com/"/>
+      <id>http://screeenly.com/</id>
+      
+        <category>ideas</category>
+      
+        <category>fun</category>
+      
+      <summary type="html"><![CDATA[
+        Capturas de pantalla online y gratis. Es un poco lento, pero funciona.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Screenly </title>
+      <link href="http://screeenly.com/"/>
+      <id>http://screeenly.com/</id>
+      
+        <category>ideas</category>
+      
+        <category>fun</category>
+      
+      <summary type="html"><![CDATA[
+        Capturas de pantalla online y gratis. Es un poco lento, pero funciona.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Ibis </title>
+      <link href="https://github.com/erebe/personal-server"/>
+      <id>https://github.com/erebe/personal-server</id>
+      
+        <category>back-end</category>
+      
+        <category>full-stack</category>
+      
+      <summary type="html"><![CDATA[
+        Guía para crear un servidor personal con K8s, SOPS, GPG, DNS.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Ibis </title>
+      <link href="https://github.com/themsaid/ibis"/>
+      <id>https://github.com/themsaid/ibis</id>
+      
+        <category>back-end</category>
+      
+        <category>full-stack</category>
+      
+      <summary type="html"><![CDATA[
+        Si te equivocas en la terminal escribe &quot;fuck&quot; y lo arreglas.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Ibis </title>
+      <link href="https://github.com/themsaid/ibis"/>
+      <id>https://github.com/themsaid/ibis</id>
+      
+        <category>ideas</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Generador de Ebook a Markdown con PHP Laravel.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Recursos de design para developers</title>
+      <link href="https://github.com/bradtraversy/design-resources-for-developers"/>
+      <id>https://github.com/bradtraversy/design-resources-for-developers</id>
+      
+        <category>ideas</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Recursos con componentes modernos UI en diferen formatos como PSD, Sketch, Figma, etc.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>html2pdf.js</title>
+      <link href="https://ekoopmans.github.io/html2pdf.js/"/>
+      <id>https://ekoopmans.github.io/html2pdf.js/</id>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Convierte HTML a PDF usando puro JS con renderizado del lado del cliente.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Developer Roadmaps</title>
+      <link href="https://roadmap.sh/"/>
+      <id>https://roadmap.sh/</id>
+      
+        <category>full-malandriner</category>
+      
+      <summary type="html"><![CDATA[
+        Guías paso a paso y caminos para aprender diferentes herramientas y tecnologías.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Libreria CSS minimalista</title>
+      <link href="https://awesome-web-animation.netlify.app/"/>
+      <id>https://awesome-web-animation.netlify.app/</id>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Hojas de estilos minimalistas para elementos HTML, sin clases, sin frameworks, solo semántica facil.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Awesome Web Animations</title>
+      <link href="https://awesome-web-animation.netlify.app/"/>
+      <id>https://awesome-web-animation.netlify.app/</id>
+      
+        <category>front-end</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Cientos de recursos para animar la web con cabeza y no con los pies.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Code App</title>
+      <link href="https://www.genbeta.com/correo/trucos-para-gmail-como-crearte-muchas-direcciones-extra-para-tu-cuenta"/>
+      <id>https://www.genbeta.com/correo/trucos-para-gmail-como-crearte-muchas-direcciones-extra-para-tu-cuenta</id>
+      
+        <category>full-stack</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Nunca más usarás cuentas falsas de correo para pruebas.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Code App</title>
+      <link href="https://apps.apple.com/es/app/code-app/id1512938504?l=ca"/>
+      <id>https://apps.apple.com/es/app/code-app/id1512938504?l=ca</id>
+      
+        <category>apps</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Programar y compilar en el iPad.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>FingerprintsJS</title>
+      <link href="https://github.com/fingerprintjs/fingerprintjs"/>
+      <id>https://github.com/fingerprintjs/fingerprintjs</id>
+      
+        <category>back-end</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        para identificar a los usuarios sin autenticación.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Envio secreto de password</title>
+      <link href="https://enviosecreto.es/"/>
+      <id>https://enviosecreto.es/</id>
+      
+        <category>full-stack</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Si quieres pasar contraseñas que se autodestruyan de forma segura por internet, usa esto.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Automatiza Notion con Python</title>
+      <link href="https://ayushirawat.com/automate-notion-with-python"/>
+      <id>https://ayushirawat.com/automate-notion-with-python</id>
+      
+        <category>education</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Revoluciona el uso de Notion con este tutorial.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Metacast</title>
+      <link href="https://www.notion.so/MetaCast-92c8bd50e6b8402499155fc8bbafe5da"/>
+      <id>https://www.notion.so/MetaCast-92c8bd50e6b8402499155fc8bbafe5da</id>
+      
+        <category>education</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        El proyecto de Carlos nos sigue ayudando con sus resúmenes de podcasts (muchos de tecnología).
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>HackTricks</title>
+      <link href="https://book.hacktricks.xyz/"/>
+      <id>https://book.hacktricks.xyz/</id>
+      
+        <category>full-stack</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Ebook gratuito sobre hacking del que me encantaría entenderlo todo.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Neocities</title>
+      <link href="https://neocities.org/"/>
+      <id>https://neocities.org/</id>
+      
+        <category>front-end</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        El sucesor natural de Geocities. Crea una Website gratis con cero anuncios
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>OneTab</title>
+      <link href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=es"/>
+      <id>https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=es</id>
+      
+        <category>full-stack</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        La extensión que ahora consumo de memoria del navegador.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Maravellous Suspender</title>
+      <link href="https://github.com/gioxx/MarvellousSuspender"/>
+      <id>https://github.com/gioxx/MarvellousSuspender</id>
+      
+        <category>full-stack</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        La extensión que permite suspender las tabs del navegador no visibles.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Shields</title>
+      <link href="https://shields.io/"/>
+      <id>https://shields.io/</id>
+      
+        <category>fun</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Badges para proyectos Open Source (utilizados en el #ProgramaEnPantuflas)
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Meli</title>
+      <link href="https://docs.meli.sh/"/>
+      <id>https://docs.meli.sh/</id>
+      
+        <category>education</category>
+      
+        <category>full-stack</category>
+      
+      <summary type="html"><![CDATA[
+        Hosting propio para el ecosistema Jamstack (Netlify Self Hosted, por así decirlo).
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Zettelkasten Java</title>
+      <link href="https://github.com/Zettelkasten-Team/Zettelkasten"/>
+      <id>https://github.com/Zettelkasten-Team/Zettelkasten</id>
+      
+        <category>education</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Interfaz en Java para este sistema de archivo de ideas.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Flutter Plasma</title>
+      <link href="https://flutterplasma.dev/"/>
+      <id>https://flutterplasma.dev/</id>
+      
+        <category>education</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Flutter es un framework basado en Dart (bebe de JavaScript) y ronda los dominios de Google.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Porter</title>
+      <link href="https://www.getporter.dev/"/>
+      <id>https://www.getporter.dev/</id>
+      
+        <category>education</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Heroku en formato Open Source.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Herramientas de una Newsletter</title>
+      <link href="https://terminaldelinux.com/terminal/"/>
+      <id>https://terminaldelinux.com/terminal/</id>
+      
+        <category>education</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Lo que necesitas para la creacion personalizada para newsletters semanales.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Terminal de Linux</title>
+      <link href="https://terminaldelinux.com/terminal/"/>
+      <id>https://terminaldelinux.com/terminal/</id>
+      
+        <category>education</category>
+      
+        <category>full-stack</category>
+      
+      <summary type="html"><![CDATA[
+        Introducción en castellano para sacar más partido a la consola.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>External SVGs</title>
+      <link href="https://gitlab.com/imanolvalero/external-svgs"/>
+      <id>https://gitlab.com/imanolvalero/external-svgs</id>
+      
+        <category>education</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Un malandriner ha creado un ejemplo muy interesante para importar y manipular SVG en nuestras webs.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Binary.Ninja</title>
+      <link href="https://binary.ninja/"/>
+      <id>https://binary.ninja/</id>
+      
+        <category>education</category>
+      
+        <category>back-end</category>
+      
+      <summary type="html"><![CDATA[
+        Es un IDE para hacer ingeniería inversa. Decompila, desensambla binarios, analiza estructuras y relaciones en el código más profundo..
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>GrapeJS</title>
+      <link href="https://grapesjs.com/"/>
+      <id>https://grapesjs.com/</id>
+      
+        <category>education</category>
+      
+        <category>back-end</category>
+      
+      <summary type="html"><![CDATA[
+        Es un editor de bloques visual de código abierto. Si estás buscando que cualquiera pueda editar una web o newsletter, aquí lo tienes.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Napkin</title>
+      <link href="https://www.napkin.io/"/>
+      <id>https://www.napkin.io/</id>
+      
+        <category>education</category>
+      
+        <category>back-end</category>
+      
+      <summary type="html"><![CDATA[
+        Es un backend sin infraestructura. Solo en una caja de texto puedes ejecutar Python sin preguntas. Una URL para acceder y listo.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Postman</title>
+      <link href="https://www.postman.com/"/>
+      <id>https://www.postman.com/</id>
+      
+        <category>education</category>
+      
+        <category>full-malandriner</category>
+      
+      <summary type="html"><![CDATA[
+        Testea una API con endpoints y respuestas. Simplifica los pasos para construir una API
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Netlify</title>
+      <link href="https://www.netlify.com/"/>
+      <id>https://www.netlify.com/</id>
+      
+        <category>fun</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Hosts this website and other personal frontend projects. Highly recommended
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Daniel Primo - Web Reactiva</title>
+      <link href="https://www.danielprimo.io"/>
+      <id>https://www.danielprimo.io</id>
+      
+        <category>education</category>
+      
+        <category>front-end</category>
+      
+        <category>fun</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Desarrolla aplicaciones web como en Silicon Valley aunque programes desde el cuarto de la ropa sucia.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Lastpass</title>
+      <link href="https://www.lastpass.com/es/solutions/business-password-manager"/>
+      <id>https://www.lastpass.com/es/solutions/business-password-manager</id>
+      
+        <category>apps</category>
+      
+      <summary type="html"><![CDATA[
+        La seguridad de contraseñas no se puede dejar para mañana.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>freeCodeCamp</title>
+      <link href="https://www.freecodecamp.org/"/>
+      <id>https://www.freecodecamp.org/</id>
+      
+        <category>education</category>
+      
+      <summary type="html"><![CDATA[
+        Comunidad sin animo de lucro para ayudar a aprender a programar.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Trello</title>
+      <link href="https://trello.com"/>
+      <id>https://trello.com</id>
+      
+        <category>full-impostor</category>
+      
+      <summary type="html"><![CDATA[
+        Makes it easier to put down ideas and plans for new and ongoing projects.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>VS Code</title>
+      <link href="https://code.visualstudio.com/"/>
+      <id>https://code.visualstudio.com/</id>
+      
+        <category>education</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Code editing.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Oh My Zsh</title>
+      <link href="https://github.com/ohmyzsh/ohmyzsh"/>
+      <id>https://github.com/ohmyzsh/ohmyzsh</id>
+      
+        <category>full-stack</category>
+      
+        <category>back-end</category>
+      
+        <category>front-end</category>
+      
+      <summary type="html"><![CDATA[
+        Oh My Zsh will not make you a 10x developer...but you may feel like one.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>GitHub Desktop</title>
+      <link href="https://desktop.github.com/"/>
+      <id>https://desktop.github.com/</id>
+      
+        <category>fun</category>
+      
+      <summary type="html"><![CDATA[
+        Focus on what matters instead of fighting with Git.
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>Web Reactivaaaaaaa</title>
+      <link href="https://www.danielprimo.io/podcast"/>
+      <id>https://www.danielprimo.io/podcast</id>
+      
+        <category>front-end</category>
+      
+        <category>fun</category>
+      
+        <category>ideas</category>
+      
+      <summary type="html"><![CDATA[
+        Web Reactiva es el podcast free de danielprimo.io. Historias que tienen que ver con la programación y el desarrollo web....Porque la tecnología es necesaria, pero, ¡las personas somos lo importante!
+      ]]></summary>
+    </entry>
+  
+    <entry>
+      <title>@Chemistdev</title>
+      <link href="https://www.antonioarjona.dev"/>
+      <id>https://www.antonioarjona.dev</id>
+      
+        <category>full-malandriner</category>
+      
+      <summary type="html"><![CDATA[
+        Antonio
+      ]]></summary>
+    </entry>
+  
+</feed>
